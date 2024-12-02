@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENHYPEN成员——西村力</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        mark {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <h1>ENHYPEN成员介绍：<mark>西村力</mark></h1>
+
+    <p><strong>西村力</strong>（<em>NI-KI</em>，<ruby>にしむら りき<rt>Nishimura Riki</rt></ruby>）是韩国男团<abbr title="ENHYPEN">ENHYPEN</abbr>的一员，凭借出色的舞蹈实力和个人魅力备受关注。</p>
+
+    <h2>基本信息</h2>
+    <dl>
+        <dt><strong>姓名：</strong></dt>
+        <dd>西村力（Nishimura Riki）</dd>
+        <dt><strong>艺名：</strong></dt>
+        <dd><em>NI-KI</em></dd>
+        <dt><strong>出生日期：</strong></dt>
+        <dd>2005年12月9日</dd>
+        <dt><strong>出生地：</strong></dt>
+        <dd>日本冈山县</dd>
+        <dt><strong>国籍：</strong></dt>
+        <dd>日本</dd>
+    </dl>
+
+    <h2>主要经历</h2>
+    <ul>
+        <li><mark>2020年</mark>，通过韩国选秀节目<em>I-LAND</em>脱颖而出，成为<abbr title="ENHYPEN">ENHYPEN</abbr>正式成员。</li>
+        <li><mark>2020年11月30日</mark>，随团发行首张迷你专辑《<strong>BORDER: DAY ONE</strong>》。</li>
+        <li>作为<abbr title="ENHYPEN">ENHYPEN</abbr>的主领舞，以其精准的舞蹈动作和强烈的舞台表现力而闻名。</li>
+    </ul>
+
+    <h2>代表作品</h2>
+    <ol>
+        <li>迷你专辑《<strong>BORDER: DAY ONE</strong>》中的主打曲《<em>Given-Taken</em>》</li>
+        <li>迷你专辑《<strong>DIMENSION: DILEMMA</strong>》中的热门曲《<em>Drunk-Dazed</em>》</li>
+        <li>专辑《<strong>MANIFESTO: DAY 1</strong>》中的代表曲《<em>Future Perfect</em>》</li>
+    </ol>
+
+    <h2>照片展示</h2>
+    <img src="https://via.placeholder.com/600x400" alt="西村力的照片">
+    <p><small>（提示：请替换为实际照片链接）</small></p>
+
+    <h3>扩展阅读</h3>
+    <p>作为团队的忙内，西村力不仅拥有突出的<em>舞蹈天赋</em>，还因<mark>语言天赋</mark>而备受粉丝喜爱。他能流利地使用韩语和日语进行交流，同时在歌唱方面也不断进步。</p>
+    <p>值得一提的是，他曾在多次舞台表演中展现出<abbr title="LED动态舞蹈表演">视觉互动技术</abbr>的舞台效果，堪称<sup>次世代</sup>偶像的典范。</p>
+
+    <h2>联系方式与更多信息</h2>
+    <p>欲了解更多关于西村力的信息，可以访问以下官方渠道：</p>
+    <ul>
+        <li>官方推特：<a href="https://twitter.com/enhypen" target="_blank">https://twitter.com/enhypen</a></li>
+        <li>官方Instagram：<a href="https://instagram.com/enhypen" target="_blank">https://instagram.com/enhypen</a></li>
+    </ul>
+
+    <p><small>注：以上内容仅供参考，请以官方资料为准。</small></p>
+</body>
+</html>
