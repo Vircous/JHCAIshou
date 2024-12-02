@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西村力 - ENHYPEN成员介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-weight: bold;
+            color: #e74c3c; /* 高亮显示大标题 */
+        }
+        h2 {
+            color: #3498db; /* 小标题颜色 */
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: square;
+            margin: 10px 0;
+        }
+        em {
+            color: #e67e22; /* 强调内容 */
+        }
+        mark {
+            background-color: #ffeb3b; /* 高亮背景 */
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #8e44ad;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>西村力 - ENHYPEN成员介绍</h1>
+
+        <div class="image-container">
+            <img src="https://example.com/xichunli.jpg" alt="西村力照片">
+        </div>
+
+        <p><strong>姓名：</strong>西村力 (Nishimura Riki)</p>
+        <p><strong>出生日期：</strong>2005年2月</p>
+
+        <img src="riki.png">
+
+        <h2>主要经历与作品</h2>
+        <ul>
+            <li>2019年，参加《I-LAND》节目，获得加入ENHYPEN的机会。</li>
+            <li>2020年11月30日，作为ENHYPEN成员出道，推出首张专辑《BORDER: DAY ONE》。</li>
+            <li>2021年４月26日，参与发行第二张专辑《BORDER: CARNIVAL》。</li>
+            <li>2021年7月6日，参与发行第一张日本专辑《BORDER:儚い》
+            <li>2021年10月12日，参与发行第一张正规专辑《DIMENSION:DILEMMA》
+            <li>2022年1月10日，参与发行《DIMENSION: ANSWER》专辑，进一步巩固在韩国乐坛的地位。</li>
+            <li>2023年5月22日，参与发行专辑《DARK BLOOD》后大火，该专辑收录了流媒体点击量超过2亿的单曲《BITE ME》
+            <li>2024年7月12日，参与发行第二张正规专辑《ROMANCE:UNTOLD》
+        </ul>
+
+        <h2>爱好与个性</h2>
+        <p>西村力有着广泛的兴趣爱好，尤其喜欢<strong><em>舞蹈</em></strong>和<strong><em>唱歌</em></strong>。他也热衷于<strong>游戏</strong>，并且非常喜爱尝试新的<strong>运动</strong>，例如棒球和保龄球。他的个性外向、开朗，总是给人积极向上的印象。</p>
+
+        <h2>获奖经历</h2>
+        <ul>
+            <li>2021年，ENHYPEN获得韩国金唱片奖最佳新人奖。</li>
+            <li>2022年，ENHYPEN在MAMA奖项中获得最佳男团奖。</li>
+            <li>西村力个人也因其出色的舞台表现，屡次被媒体评为“最具潜力新人”。</li>
+        </ul>
+
+        <h2>人际关系</h2>
+        <p>家庭成员有爸爸、妈妈、姐姐、妹妹。其中姐姐西村心暖也是一名舞者。西村力与ENHYPEN的其他成员关系非常好，尤其与成员<strong><mark>李羲承</mark></strong>和<strong><mark>沈载伦</mark></strong>关系密切。三人经常一起练习舞蹈和聊天，一起约饭。</p>
+
+        <h2>时尚与资源</h2>
+        <p>西村力以其时尚的穿搭和独特的个性被时尚圈所瞩目。多次亮相韩国的时尚活动并成为品牌代言人。近年来，他与多个<strong>国际品牌</strong>合作，包括服饰和鞋类等产品的代言。</p>
+
+        <h2>社交媒体与公众形象</h2>
+        <p>西村力在社交媒体上有着庞大的粉丝群体，他的Instagram、Twitter等账号时常分享自己的日常生活和音乐创作过程，深受粉丝们的喜爱。西村力的真诚与努力给公众留下了积极向上的形象。</p>
+    </div>
+</body>
+</html>
