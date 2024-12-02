@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI Personality Test</title>
+</head>
+<body>
+    <H1>MBTI Personality Test</H1>
+    <P>Please answer the following questions to discover your MBTI personality type:
+    <FORM METHOD="POST" ACTION="http://www.example.com/submit-mbti">
+
+        <!-- Basic Information -->
+        <P>Your name: <INPUT NAME="name" size="48">
+        <P>Gender:  
+        Male <INPUT NAME="gender" TYPE=RADIO VALUE="male">  
+        Female <INPUT NAME="gender" TYPE=RADIO VALUE="female">
+        <P>Your age: <INPUT NAME="age" TYPE="text" size="10">
+
+        <!-- MBTI Questions -->
+        <H2>Section 1: Energy Direction</H2>
+        <P>How do you recharge your energy?</P>
+        <UL>
+            <LI>By spending time with others and engaging in activities <INPUT NAME="energy" TYPE=RADIO VALUE="E">
+            <LI>By spending time alone to reflect and recharge <INPUT NAME="energy" TYPE=RADIO VALUE="I">
+        </UL>
+
+        <H2>Section 2: Information Processing</H2>
+        <P>How do you prefer to process information?</P>
+        <UL>
+            <LI>By focusing on facts and details <INPUT NAME="information" TYPE=RADIO VALUE="S">
+            <LI>By considering patterns and the bigger picture <INPUT NAME="information" TYPE=RADIO VALUE="N">
+        </UL>
+
+        <H2>Section 3: Decision Making</H2>
+        <P>What is your decision-making style?</P>
+        <UL>
+            <LI>Based on logic and objective principles <INPUT NAME="decision" TYPE=RADIO VALUE="T">
+            <LI>Based on personal values and empathy <INPUT NAME="decision" TYPE=RADIO VALUE="F">
+        </UL>
+
+        <H2>Section 4: Approach to Life</H2>
+        <P>How do you approach your daily life?</P>
+        <UL>
+            <LI>With structure and clear plans <INPUT NAME="lifestyle" TYPE=RADIO VALUE="J">
+            <LI>With flexibility and openness to change <INPUT NAME="lifestyle" TYPE=RADIO VALUE="P">
+        </UL>
+
+        <!-- Optional Comments -->
+        <H2>Additional Comments</H2>
+        <P>If you have any comments or want to elaborate on your choices, please do so below:</P>
+        <TEXTAREA NAME="comments" cols="48" rows="4"></TEXTAREA>
+
+        <!-- Submit and Reset -->
+        <P>Click "Submit" to discover your MBTI type or "Reset" to clear your answers.</P>
+        <P><INPUT TYPE=SUBMIT VALUE="Submit"> <INPUT TYPE=RESET VALUE="Reset">
+
+    </FORM>
+</body>
+</html>
