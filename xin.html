@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI Personality Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>MBTI Personality Test</h1>
+    <p>Please fill out this questionnaire to determine your MBTI personality type:</p >
+
+    <form id="mbtiForm">
+        <!-- Name Field -->
+        <p>Your name: <input name="name" size="48" type="text" required></p >
+        
+        <!-- Gender Selection -->
+        <p>Gender:</p >
+        <input name="gender" type="radio" value="male" required> Male
+        <input name="gender" type="radio" value="female" required> Female
+        
+        <!-- MBTI Personality Type Questions -->
+        <p>Do you prefer:</p >
+        <input name="extroversion_introversion" type="radio" value="E" required> Extroversion
+        <input name="extroversion_introversion" type="radio" value="I" required> Introversion
+        
+        <p>Do you focus more on:</p >
+        <input name="sensing_intuition" type="radio" value="S" required> Sensing
+        <input name="sensing_intuition" type="radio" value="N" required> Intuition
+        
+        <p>When making decisions, do you prefer:</p >
+        <input name="thinking_feeling" type="radio" value="T" required> Thinking
+        <input name="thinking_feeling" type="radio" value="F" required> Feeling
+        
+        <p>Your approach to life is more:</p >
+        <input name="judging_perceiving" type="radio" value="J" required> Judging
+        <input name="judging_perceiving" type="radio" value="P" required> Perceiving
+        
+        <!-- Additional Questions -->
+        <p>You prefer:</p >
+        <input name="structure_spontaneity" type="radio" value="J" required> Structured routines
+        <input name="s
