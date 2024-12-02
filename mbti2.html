@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MBTI Personality Test</title>
+    <script>
+        function calculateMBTI() {
+            // 获取用户选择的值
+            const energy = document.querySelector('input[name="energy"]:checked')?.value || "";
+            const information = document.querySelector('input[name="information"]:checked')?.value || "";
+            const decision = document.querySelector('input[name="decision"]:checked')?.value || "";
+            const lifestyle = document.querySelector('input[name="lifestyle"]:checked')?.value || "";
+
+            // 检查是否有未回答的问题
+            if (!energy || !information || !decision || !lifestyle) {
+                alert("Please answer all questions!");
+                return;
+            }
+
+            // 拼接结果
+            const mbtiType = energy + information + decision + lifestyle;
+
+            // 显示结果
+            document.getElementById("result").textContent = `Your MBTI Personality Type: ${mbtiType}`;
+        }
+    </script>
 </head>
 <body>
     <H1>MBTI Personality Test</H1>
     <P>Please answer the following questions to discover your MBTI personality type:
-    <FORM METHOD="POST" ACTION="http://www.example.com/submit-mbti">
-
-        <!-- Basic Information -->
+    <FORM onsubmit="return false;"> <!-- 防止页面刷新 -->
+        <!-- 基础信息 -->
         <P>Your name: <INPUT NAME="name" size="48">
         <P>Gender:  
         Male <INPUT NAME="gender" TYPE=RADIO VALUE="male">  
         Female <INPUT NAME="gender" TYPE=RADIO VALUE="female">
         <P>Your age: <INPUT NAME="age" TYPE="text" size="10">
 
-        <!-- MBTI Questions -->
+        <!-- MBTI问题 -->
         <H2>Section 1: Energy Direction</H2>
         <P>How do you recharge your energy?</P>
         <UL>
@@ -46,15 +66,14 @@
             <LI>With flexibility and openness to change <INPUT NAME="lifestyle" TYPE=RADIO VALUE="P">
         </UL>
 
-        <!-- Optional Comments -->
-        <H2>Additional Comments</H2>
-        <P>If you have any comments or want to elaborate on your choices, please do so below:</P>
-        <TEXTAREA NAME="comments" cols="48" rows="4"></TEXTAREA>
-
-        <!-- Submit and Reset -->
-        <P>Click "Submit" to discover your MBTI type or "Reset" to clear your answers.</P>
-        <P><INPUT TYPE=SUBMIT VALUE="Submit"> <INPUT TYPE=RESET VALUE="Reset">
+        <!-- 计算按钮 -->
+        <P><INPUT TYPE="button" VALUE="Discover Your MBTI Type" onclick="calculateMBTI()">
 
     </FORM>
+
+    <!-- 结果显示 -->
+    <H2>Result</H2>
+    <P id="result" style="font-weight: bold; color: blue;">Your MBTI Personality Type will appear here.</P>
 </body>
 </html>
+
