@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<title>MBTI Personality Test Form</title>
+<H1>MBTI Personality Test</H1>
+<P>Please fill out this questionnaire:
+<FORM METHOD="POST" ACTION="http://www.example.com/submit-mbti">
+  
+  <P>Your name: <INPUT NAME="name" size="48">
+  
+  <P>Gender:  
+  Male <INPUT NAME="gender" TYPE=RADIO VALUE="male">  
+  Female <INPUT NAME="gender" TYPE=RADIO VALUE="female">  
+  Other <INPUT NAME="gender" TYPE=RADIO VALUE="other">
+
+  <P>Age: <INPUT NAME="age" TYPE=NUMBER min="1" max="120">
+
+  <P>How do you usually make decisions?  
+  <UL>
+    <LI>Based on logic and consistency  
+        <INPUT NAME="decision" TYPE=RADIO VALUE="thinking">  
+    <LI>Based on values and empathy  
+        <INPUT NAME="decision" TYPE=RADIO VALUE="feeling">  
+  </UL>
+
+  <P>Which environment suits you better?  
+  <UL>
+    <LI>Structured and scheduled  
+        <INPUT NAME="environment" TYPE=RADIO VALUE="judging">  
+    <LI>Flexible and spontaneous  
+        <INPUT NAME="environment" TYPE=RADIO VALUE="perceiving">  
+  </UL>
+
+  <P>What do you focus on more?  
+  <UL>
+    <LI>Outer world and interactions  
+        <INPUT NAME="focus" TYPE=RADIO VALUE="extroversion">  
+    <LI>Inner thoughts and ideas  
+        <INPUT NAME="focus" TYPE=RADIO VALUE="introversion">  
+  </UL>
+
+  <P>How do you gather information?  
+  <UL>
+    <LI>Practical details and present realities  
+        <INPUT NAME="information" TYPE=RADIO VALUE="sensing">  
+    <LI>Big picture and future possibilities  
+        <INPUT NAME="information" TYPE=RADIO VALUE="intuition">  
+  </UL>
+
+  <P>Additional Comments:  
+  <TEXTAREA NAME="comments" cols="48" rows="4"></TEXTAREA>
+
+  <P>Thank you for participating in this test.
+  <P><INPUT TYPE=SUBMIT VALUE="Submit"> <INPUT TYPE=RESET VALUE="Reset">
+</FORM>
