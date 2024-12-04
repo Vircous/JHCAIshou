@@ -44,14 +44,20 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .image-container {
-            text-align: center;
+     .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
             margin: 20px 0;
         }
-        .image-container img {
-            max-width: 100%;
+        .image-row img {
+            width: 30%;
             height: auto;
-            border-radius: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .video-container {
+            margin: 20px 0;
         }
         .section-title {
             font-weight: bold;
@@ -66,7 +72,19 @@
         <p><strong>姓名：</strong>西村力 (Nishimura Riki)</p>
         <p><strong>出生日期：</strong>2005年2月</p>
         <p><strong>组合定位：</strong>主舞、忙内</p>
+       
+        <div class="image-row">
         <img src="riki.png">
+        <img src="riki2.png">
+        <img src="riki3.png">
+        </div>
+
+        <h2>舞蹈视频</h2>
+         <div class="video-container">
+        <video width="80%" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+         </div>
 
         <h2>主要经历与作品</h2>
         <ul>
