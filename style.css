@@ -16,7 +16,7 @@ body {
     height: 90%;
     position: relative;
     display: flex;
-    flex-direction: column; /* 使幻灯片布局方向为纵向 */
+    flex-direction: column; /* 纵向布局 */
     overflow: hidden;
     border: 3px solid #fff;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -81,45 +81,18 @@ body {
 /* 照片容器 */
 .photo-container {
     margin-top: 20px;
-    width: 60%;
-    height: 40%;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+    width: auto; /* 不限制容器宽度 */
+    height: auto; /* 不限制容器高度 */
+    max-width: 80%; /* 设置最大宽度 */
+    max-height: 60%; /* 设置最大高度 */
+    overflow: visible; /* 确保不裁剪图片 */
+    border: 3px solid #fff;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.3);
 }
 
 .photo-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: auto; /* 保持图片原始宽度 */
+    height: auto; /* 保持图片原始高度 */
+    display: block; /* 确保图片在块级容器中 */
 }
-
-/* 按钮样式 */
-.controls {
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-button {
-    background: rgba(255, 255, 255, 0.7);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-button:hover {
-    background: rgba(255, 255, 255, 1);
-    color: #000;
-}
-
-button:hover {
-    background: rgba(255, 255, 255, 1);
-    color: #000;
-}
-
