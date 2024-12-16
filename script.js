@@ -5,6 +5,7 @@ let currentIndex = 0;
 function showSlide(index) {
     slides.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
+        slide.style.transform = `translateY(${(i - index) * 100}%)`;
     });
 }
 
@@ -22,3 +23,4 @@ document.getElementById('next').addEventListener('click', () => {
 
 // 初始化第一张幻灯片
 showSlide(currentIndex);
+
