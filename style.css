@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     background: #000;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -14,9 +13,10 @@ body {
 
 #presentation {
     width: 80%;
-    height: 80%;
+    height: 90%;
     position: relative;
     display: flex;
+    flex-direction: column; /* 使幻灯片布局方向为纵向 */
     overflow: hidden;
     border: 3px solid #fff;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -30,17 +30,23 @@ body {
     justify-content: center;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 1s, transform 1s;
+    transform: translateY(100%); /* 初始位置在视窗下方 */
+    transition: opacity 0.8s, transform 0.8s;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
 }
 
-/* 添加视觉设计的差异化样式 */
+/* 激活的幻灯片 */
+.slide.active {
+    opacity: 1;
+    transform: translateY(0); /* 激活的幻灯片移到视窗中央 */
+}
+
+/* 幻灯片样式差异化 */
 #slide1 {
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     color: #1a1a1a;
@@ -48,7 +54,6 @@ body {
 }
 #slide1 h1 {
     font-size: 3em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 #slide1 p {
     font-size: 1.5em;
@@ -60,50 +65,20 @@ body {
     font-family: 'Arial Black', sans-serif;
     text-shadow: 2px 2px 10px #000;
 }
-#slide2 h1 {
-    font-size: 3.2em;
-    color: #ffde59;
-}
-#slide2 p {
-    font-size: 1.4em;
-    color: #ffffff;
-}
 
 #slide3 {
     background: linear-gradient(135deg, #4facfe, #00f2fe);
     font-family: 'Courier New', monospace;
-    color: #ffffff;
-}
-#slide3 h1 {
-    font-size: 3em;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-#slide3 p {
-    font-size: 1.5em;
+    color: #fff;
 }
 
 #slide4 {
     background: url('dance2-bg.jpg') no-repeat center center;
     background-size: cover;
     font-family: 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 2px 15px #000;
-}
-#slide4 h1 {
-    font-size: 3.2em;
-    color: #fff;
-}
-#slide4 p {
-    font-size: 1.4em;
-    color: #ffe4b5;
 }
 
-/* 激活的幻灯片 */
-.slide.active {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* 照片容器样式 */
+/* 照片容器 */
 .photo-container {
     margin-top: 20px;
     width: 60%;
@@ -138,6 +113,11 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+button:hover {
+    background: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
 button:hover {
     background: rgba(255, 255, 255, 1);
     color: #000;
