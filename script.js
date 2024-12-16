@@ -9,6 +9,14 @@ function showSlide(index) {
     });
 }
 
+// 点击显示正文
+document.querySelectorAll('.content').forEach(content => {
+    content.addEventListener('click', () => {
+        const text = content.querySelector('.text');
+        if (text) text.classList.add('visible');
+    });
+});
+
 // 上一页按钮
 document.getElementById('prev').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
@@ -22,6 +30,8 @@ document.getElementById('next').addEventListener('click', () => {
 });
 
 // 初始化第一张幻灯片
+showSlide(currentIndex);
+
 showSlide(currentIndex);
 
 
