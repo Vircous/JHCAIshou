@@ -72,8 +72,8 @@ body {
 
 /* 图片样式，控制图片大小 */
 .content img {
-    max-width: 20%;  /* 限制图片最大宽度为页面宽度的50% */
-    max-height: 50px; /* 限制图片最大高度为300px */
+    max-width: 25%;  /* 限制图片最大宽度为页面宽度的25% */
+    max-height: 25%; /* 限制图片最大高度为页面高度的25% */
     object-fit: contain; /* 保证图片不变形 */
     margin-top: 20px;
 }
@@ -101,6 +101,7 @@ button {
 button:hover {
     background: rgba(255, 255, 255, 1);
 }
+
 
 
 
