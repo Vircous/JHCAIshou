@@ -1,34 +1,121 @@
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
-
-// 显示当前幻灯片
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-        slide.style.transform = `translateY(${(i - index) * 100}%)`;
-    });
+/* 基础样式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
-// 点击显示正文
-document.querySelectorAll('.content').forEach(content => {
-    content.addEventListener('click', () => {
-        const text = content.querySelector('.text');
-        if (text) text.classList.add('visible');
-    });
-});
+#presentation {
+    width: 80%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
 
-// 上一页按钮
-document.getElementById('prev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-});
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.8s, transform 0.8s;
+}
 
-// 下一页按钮
-document.getElementById('next').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-});
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
 
-// 初始化第一张幻灯片
-showSlide(currentIndex);
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 第一页样式 */
+#slide1 {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+#slide1 .content img {
+    max-width: 50%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* 第二页样式 */
+#slide2 {
+    background: linear-gradient(135deg, #8e9eab, #eef2f3);
+    font-family: 'Courier New', monospace;
+    color: #111;
+}
+
+#slide2 .content img {
+    max-width: 50%;
+    border: 2px solid #111;
+    border-radius: 10px;
+}
+
+/* 第三页样式 */
+#slide3 {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+#slide3 .content img {
+    max-width: 50%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+/* 控制按钮 */
+.controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
 
